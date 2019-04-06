@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B85A6F0522583F4A0017C009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A6F0422583F4A0017C009 /* Foundation.framework */; };
 		B89AD0EB2254740E00AE0DFD /* CategorizationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0DD2254740E00AE0DFD /* CategorizationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89AD0FD225474C900AE0DFD /* GroupLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* GroupLabel.m */; };
 		B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B85A6F0422583F4A0017C009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B89AD0DA2254740E00AE0DFD /* CategorizationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CategorizationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89AD0DD2254740E00AE0DFD /* CategorizationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategorizationKit.h; sourceTree = "<group>"; };
 		B89AD0DE2254740E00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85A6F0522583F4A0017C009 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 		B89AD0F42254747700AE0DFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B85A6F0422583F4A0017C009 /* Foundation.framework */,
 				B89AD0F52254747700AE0DFD /* TransmissionRPC.framework */,
 			);
 			name = Frameworks;
