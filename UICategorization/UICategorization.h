@@ -15,8 +15,8 @@ FOUNDATION_EXPORT double CategorizationUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char CategorizationUIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CategorizationUI/PublicHeader.h>
-#import <CategorizationKit/Categorization.h>
-#import <CategorizationKit/GroupLabel.h>
-#import <CategorizationKit/Label.h>
+#import <UICategorization/Categorization.h>
+#import <UICategorization/GroupLabel.h>
+#import <UICategorization/Label.h>
 
 
