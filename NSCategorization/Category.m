@@ -1,31 +1,31 @@
 //
-//  Label.m
+//  Category.m
 //  CategorizationKit
 //
 //  Created by Alexey Chechetkin on 12.07.15.
 //  Copyright (c) 2015 Alexey Chechetkin. All rights reserved.
 //
 
-#import "Label.h"
+#import "Category.h"
 
 
 
-@implementation Label
+@implementation Category
 
 
-+(Label*)label:(NSString *)label withPredicate:(NSPredicate *)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)visible
++(Category*)categoryWithTitle:(NSString *)title predicate:(NSPredicate *)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)visible
 {
-    return [[Label alloc] initWithTitle:label predicate:predicate andSortIndex:sortIndex isAlwaysVisible:visible];
+    return [[Category alloc] initWithTitle:title predicate:predicate andSortIndex:sortIndex isAlwaysVisible:visible];
 }
 
 
-- (instancetype)initWithTitle:(NSString*)label predicate:(NSPredicate*)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)alwaysVisible
+- (instancetype)initWithTitle:(NSString*)title predicate:(NSPredicate*)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)alwaysVisible
 {
     self = [self init];
     
     if( self )
     {
-        _title = label;
+        _title = title;
         _predicate = predicate;
         _sortIndex = sortIndex;
         _alwaysVisible = alwaysVisible;
@@ -39,15 +39,15 @@
 -(BOOL)isVisible {
     if(_itemsCount>0)
         return YES;
-    if(_delegate && [_delegate performSelector:@selector(countForLabel:) withObject:_title])
-            return (_alwaysVisible || ([_delegate countForLabel:_title] > 0));
+    if(_delegate && [_delegate performSelector:@selector(countForCategory:) withObject:_title])
+            return (_alwaysVisible || ([_delegate countForCategory:_title] > 0));
     return _alwaysVisible;
 }
 
 
 -(NSMutableArray*)items {
-    if(_delegate && [_delegate performSelector:@selector(itemsForLabel:) withObject:_title])
-        return [self.delegate itemsForLabel:_title];
+    if(_delegate && [_delegate performSelector:@selector(itemsForCategory:) withObject:_title])
+        return [self.delegate itemsForCategory:_title];
     return nil;
 }
 
@@ -55,8 +55,8 @@
 -(NSInteger)itemsCount {
     if(_itemsCount)
         return _itemsCount;
-    if(_delegate && [_delegate performSelector:@selector(countForLabel:) withObject:_title])
-         return [self.delegate countForLabel:_title];
+    if(_delegate && [_delegate performSelector:@selector(countForCategory:) withObject:_title])
+         return [self.delegate countForCategory:_title];
     return 0;
 }
 

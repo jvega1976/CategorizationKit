@@ -10,19 +10,19 @@
 
 @implementation Categorization
 
--(void)setItems:(NSArray *)items andLabels:(GroupLabel *)labels {
+-(void)setItems:(NSArray *)items andCategories:(nonnull Categories *)categories {
     _items = items;
-    _groupLabel = labels;
-    for(Label *label in _groupLabel.labels) {
-        [label setItemsCount:[[_items filteredArrayUsingPredicate:label.predicate] count]];
-        label.delegate = self;
+    _categories = categories;
+    for(Category *category in _categories.categoryList) {
+        [category setItemsCount:[[_items filteredArrayUsingPredicate:category.predicate] count]];
+        category.delegate = self;
     }
 }
 
 -(instancetype)init {
     self = [super init];
     if(self) {
-        self.groupLabel = [[GroupLabel alloc] init];
+        self.categories = [[Categories alloc] init];
         self.items = [NSArray array];
         self.searchPredicate = [NSPredicate predicateWithValue:YES];
     }
@@ -39,11 +39,11 @@
     return _inst;
 }
 
--(void)setGroupLabel:(GroupLabel *)groupLabel {
-    _groupLabel = groupLabel;
-    for(Label *label in _groupLabel.labels) {
-        [label setItemsCount:[[_items filteredArrayUsingPredicate:label.predicate] count]];
-        label.delegate = self;
+-(void)setCategories:(Categories *)categories {
+    _categories = categories;
+    for(Category *category in _categories.categoryList) {
+        [category setItemsCount:[[_items filteredArrayUsingPredicate:category.predicate] count]];
+        category.delegate = self;
     }
 }
 
@@ -55,18 +55,18 @@
 
 -(void)setItems:(NSArray *)items {
     _items = items;
-    for(Label *label in _groupLabel.labels)
-        [label setItemsCount:[[_items filteredArrayUsingPredicate:label.predicate] count]];
+    for(Category *category in _categories.categoryList)
+        [category setItemsCount:[[_items filteredArrayUsingPredicate:category.predicate] count]];
 }
 
 
--(NSInteger)countforLabelWithTitle:(NSString *)label {
-    return [_groupLabel itemCountForLabelWithTitle:label];
+-(NSInteger)countforCategoryWithTitle:(NSString *)title{
+    return [_categories countForCategoryWithTitle:title];
 }
 
 
--(NSMutableArray*)itemsInLabel:(NSString *)label {
-    NSPredicate *predicate = [_groupLabel predicateForLabelWithTitle:label];
+-(NSMutableArray*)itemsInCategoryWithTitle:(NSString *)title {
+    NSPredicate *predicate = [_categories predicateForCategoryWithTitle:title];
     if(predicate) {
         NSPredicate *searchPredicate = [NSCompoundPredicate  andPredicateWithSubpredicates:@[predicate,_searchPredicate]];
 
@@ -75,15 +75,15 @@
     return [NSMutableArray arrayWithArray:[self.items filteredArrayUsingPredicate:_searchPredicate]];
 }
 
--(BOOL)isVisibleLabelWithTitle:(NSString *)label {
-    return [_groupLabel isVisibleLabelWithTitle:label];
+-(BOOL)isVisibleCategoryWithTitle:(NSString *)title {
+    return [_categories isVisibleCategoryWithTitle:title];
 }
 
 
-#pragma mark - GroupLabelDelegate
+#pragma mark - CategoryDelegate
 
-- (NSInteger)countForLabel:(NSString *)label {
-    NSPredicate *predicate = [_groupLabel predicateForLabelWithTitle:label];
+- (NSInteger)countForCategory:(NSString *)category {
+    NSPredicate *predicate = [_categories predicateForCategoryWithTitle:category];
     if(predicate) {
         NSPredicate *searchPredicate = [NSCompoundPredicate  andPredicateWithSubpredicates:@[predicate,_searchPredicate]];
         return [[self.items filteredArrayUsingPredicate:searchPredicate] count];
@@ -91,8 +91,8 @@
     return [[self.items filteredArrayUsingPredicate:_searchPredicate] count];;
 }
 
-- (NSMutableArray*)itemsForLabel:(NSString *)label {
-    return [self itemsInLabel:label];
+- (NSMutableArray*)itemsForCategory:(NSString *)category {
+    return [self itemsInCategoryWithTitle:category];
 }
 
 @end

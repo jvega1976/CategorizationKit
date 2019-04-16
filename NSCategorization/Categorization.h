@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GroupLabel.h"
+#import "Categories.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class Categorization
  Categorization Class offer a simple way to categorize/group array items. An categorization object is mainly composed for a NSArray object with the items to categorize and a GroupLabel object with an array of Labels to use during the categorization process.
  */
-@interface Categorization : NSObject <LabelDelegate>
+@interface Categorization : NSObject <CategoryDelegate>
 
 
 /*!
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /*!
- @property groupLabel
-    GroupLabel object with the array of Labels to use in the items categorization.  Each label will provide the NSPredicate object to determine the items include in one particular label (category).
+ @property categories
+    Categories object with the array of Category objects to use in the items categorization.  Each category will provide the NSPredicate object to determine the items include in one particular category.
  */
-@property (strong,nonatomic) GroupLabel* groupLabel;
+@property (strong,nonatomic) Categories* categories;
 
 
 /*!
  @property searchPredicate
-    Predicate with additional end user criteria to restrict Items displayed in the UI.  Usually expressed as a SearchTextField.
+    Predicate with additional end user criteria to restrict Items displayed in a GUI. Usually expressed as a SearchTextField.
  */
 @property (strong,nonatomic) NSPredicate *searchPredicate;
 
@@ -48,32 +48,32 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * Simple method to assign items and GroupLabel
  @param items Items to categorize
- @param labels GroupLabel that provide labels/categories
+ @param categories Categories object with the List of categories.
  */
-- (void)setItems:(NSArray*)items andLabels:(GroupLabel*)labels;
+- (void)setItems:(NSArray*)items andCategories:(Categories*)categories;
 
 
 /*!
-Method to determine the number of items that satisfy the criteria of one particular Label.
- @param label Label title
+Method to determine the number of items that satisfy the criteria of one particular Category.
+ @param title Category title
  */
-- (NSInteger)countforLabelWithTitle:(NSString*)label;
+- (NSInteger)countforCategoryWithTitle:(NSString*)title;
 
 
 /*!
- Simple method to determine is a particular Label (category) should be displayed in the UI.  A Label is established as visible if its property alwaysVisible is YES or the number of items that satisfy the label criteria is greater than zero.
- @param label Label title
- @return YES if the label is always visible or the number of items in the category label is greater than zero.  Otherwise NO.
+ Simple method to determine is a particular Category should be displayed in a GUI.  A Category is established as visible if the alwaysVisible property is YES or the number of items that satisfy the Category criteria is greater than zero.
+ @param title Category title
+ @return YES if the category is always visible or the number of items in the category is greater than zero.  Otherwise NO.
  */
-- (BOOL)isVisibleLabelWithTitle:(NSString*)label;
+- (BOOL)isVisibleCategoryWithTitle:(NSString*)title;
 
 
 /*
- Items that satisfy a label criteria.  Label criteria is defined using a NSPredicate object.
- @param label Label title
- @return A new array object with items that satisfy the label criteria.
+ Items that satisfy a Category criteria.  Category criteria is defined using a NSPredicate object.
+ @param title Category title
+ @return A new array object with items that satisfy the Category criteria.
  */
--(NSMutableArray*)itemsInLabel:(NSString*)label;
+-(NSMutableArray*)itemsInCategoryWithTitle:(NSString*)title;
 
 
 /*!

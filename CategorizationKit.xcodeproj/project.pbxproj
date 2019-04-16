@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		B85A6F0522583F4A0017C009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A6F0422583F4A0017C009 /* Foundation.framework */; };
 		B89AD0EB2254740E00AE0DFD /* NSCategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0DD2254740E00AE0DFD /* NSCategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD0FD225474C900AE0DFD /* GroupLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* GroupLabel.m */; };
+		B89AD0FD225474C900AE0DFD /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* Categories.m */; };
 		B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
-		B89AD0FF225474C900AE0DFD /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Label.m */; };
-		B89AD100225474C900AE0DFD /* GroupLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* GroupLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD0FF225474C900AE0DFD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Category.m */; };
+		B89AD100225474C900AE0DFD /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89AD101225474C900AE0DFD /* Categorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* Categorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD102225474C900AE0DFD /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Label.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD102225474C900AE0DFD /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89AD557225487EB00AE0DFD /* UICategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD555225487EB00AE0DFD /* UICategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89AD55B225487FC00AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
-		B89AD55C225487FC00AE0DFD /* GroupLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* GroupLabel.m */; };
-		B89AD55D225487FC00AE0DFD /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Label.m */; };
+		B89AD55C225487FC00AE0DFD /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* Categories.m */; };
+		B89AD55D225487FC00AE0DFD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Category.m */; };
 		B89AD55E2254883300AE0DFD /* Categorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* Categorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD55F2254883300AE0DFD /* GroupLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* GroupLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD5602254883300AE0DFD /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Label.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD55F2254883300AE0DFD /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD5602254883300AE0DFD /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		B89AD0DD2254740E00AE0DFD /* NSCategorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCategorization.h; sourceTree = "<group>"; };
 		B89AD0DE2254740E00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89AD0F52254747700AE0DFD /* TransmissionRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransmissionRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89AD0F7225474C900AE0DFD /* GroupLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupLabel.m; sourceTree = "<group>"; };
+		B89AD0F7225474C900AE0DFD /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
 		B89AD0F8225474C900AE0DFD /* Categorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categorization.m; sourceTree = "<group>"; };
-		B89AD0F9225474C900AE0DFD /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
-		B89AD0FA225474C900AE0DFD /* GroupLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupLabel.h; sourceTree = "<group>"; };
+		B89AD0F9225474C900AE0DFD /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		B89AD0FA225474C900AE0DFD /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
 		B89AD0FB225474C900AE0DFD /* Categorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categorization.h; sourceTree = "<group>"; };
-		B89AD0FC225474C900AE0DFD /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		B89AD0FC225474C900AE0DFD /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		B89AD553225487EB00AE0DFD /* UICategorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICategorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89AD555225487EB00AE0DFD /* UICategorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICategorization.h; sourceTree = "<group>"; };
 		B89AD556225487EB00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,10 +84,10 @@
 			children = (
 				B89AD0FB225474C900AE0DFD /* Categorization.h */,
 				B89AD0F8225474C900AE0DFD /* Categorization.m */,
-				B89AD0FA225474C900AE0DFD /* GroupLabel.h */,
-				B89AD0F7225474C900AE0DFD /* GroupLabel.m */,
-				B89AD0FC225474C900AE0DFD /* Label.h */,
-				B89AD0F9225474C900AE0DFD /* Label.m */,
+				B89AD0FA225474C900AE0DFD /* Categories.h */,
+				B89AD0F7225474C900AE0DFD /* Categories.m */,
+				B89AD0FC225474C900AE0DFD /* Category.h */,
+				B89AD0F9225474C900AE0DFD /* Category.m */,
 				B89AD0DD2254740E00AE0DFD /* NSCategorization.h */,
 				B89AD0DE2254740E00AE0DFD /* Info.plist */,
 			);
@@ -120,9 +120,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B89AD0EB2254740E00AE0DFD /* NSCategorization.h in Headers */,
-				B89AD102225474C900AE0DFD /* Label.h in Headers */,
+				B89AD102225474C900AE0DFD /* Category.h in Headers */,
 				B89AD101225474C900AE0DFD /* Categorization.h in Headers */,
-				B89AD100225474C900AE0DFD /* GroupLabel.h in Headers */,
+				B89AD100225474C900AE0DFD /* Categories.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +132,8 @@
 			files = (
 				B89AD557225487EB00AE0DFD /* UICategorization.h in Headers */,
 				B89AD55E2254883300AE0DFD /* Categorization.h in Headers */,
-				B89AD55F2254883300AE0DFD /* GroupLabel.h in Headers */,
-				B89AD5602254883300AE0DFD /* Label.h in Headers */,
+				B89AD55F2254883300AE0DFD /* Categories.h in Headers */,
+				B89AD5602254883300AE0DFD /* Category.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD0FF225474C900AE0DFD /* Label.m in Sources */,
+				B89AD0FF225474C900AE0DFD /* Category.m in Sources */,
 				B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */,
-				B89AD0FD225474C900AE0DFD /* GroupLabel.m in Sources */,
+				B89AD0FD225474C900AE0DFD /* Categories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD55D225487FC00AE0DFD /* Label.m in Sources */,
-				B89AD55C225487FC00AE0DFD /* GroupLabel.m in Sources */,
+				B89AD55D225487FC00AE0DFD /* Category.m in Sources */,
+				B89AD55C225487FC00AE0DFD /* Categories.m in Sources */,
 				B89AD55B225487FC00AE0DFD /* Categorization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
