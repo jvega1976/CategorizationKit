@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B85A6F0522583F4A0017C009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A6F0422583F4A0017C009 /* Foundation.framework */; };
+		B8691B662266B1D9005B24A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8691B652266B1D9005B24A7 /* Foundation.framework */; };
 		B89AD0EB2254740E00AE0DFD /* NSCategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0DD2254740E00AE0DFD /* NSCategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89AD0FD225474C900AE0DFD /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* Categories.m */; };
 		B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		B85A6F0422583F4A0017C009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B8691B652266B1D9005B24A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B89AD0DA2254740E00AE0DFD /* NSCategorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSCategorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89AD0DD2254740E00AE0DFD /* NSCategorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCategorization.h; sourceTree = "<group>"; };
 		B89AD0DE2254740E00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8691B662266B1D9005B24A7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B85A6F0422583F4A0017C009 /* Foundation.framework */,
+				B8691B652266B1D9005B24A7 /* Foundation.framework */,
 				B89AD0F52254747700AE0DFD /* TransmissionRPC.framework */,
 			);
 			name = Frameworks;
@@ -398,7 +402,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.NSCategorization;
+				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.CategorizationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
@@ -427,7 +431,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.NSCategorization;
+				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.CategorizationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
@@ -451,7 +455,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.Categorization;
+				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.CategorizationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -477,7 +481,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.Categorization;
+				PRODUCT_BUNDLE_IDENTIFIER = johnnyvega.CategorizationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
