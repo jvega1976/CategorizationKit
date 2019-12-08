@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 /*!
-@protocol CategoryDelegate
+@protocol NSCategoryDelegate
 */
-@protocol CategoryDelegate <NSObject>
+@protocol NSCategoryDelegate <NSObject>
 
 /*!
  Method to establish the number of items that satisfy the Category predicate.
@@ -37,7 +37,7 @@
  Categories represent a categorization/grouping of Elements.  Category allow to present the items categorized information based in defined filter criterias.  Example of Categories in the Torrent world could be Active, Downloading, Tracker, etc.
  */
 
-@interface Category : NSObject
+@interface NSCategory : NSObject
 
 /*! Convinience init method
  @param title Identifying Category title
@@ -46,7 +46,7 @@
  @param visible  Boolean to establish if label will be always visible in the user interface even if there are not items that satisfy the label group criteria.
  */
 
-+(Category*)categoryWithTitle:(NSString*)title predicate:(NSPredicate*)predicate andSortIndex:(NSInteger)sortIndex  isAlwaysVisible:(BOOL)visible;
++(NSCategory*)categoryWithTitle:(NSString*)title predicate:(NSPredicate*)predicate andSortIndex:(NSInteger)sortIndex  isAlwaysVisible:(BOOL)visible;
 
 
 /*!
@@ -64,7 +64,7 @@
 /*!
  @property delagate delegate for CategoryDelegate protocol.
  */
-@property(weak,nonatomic) id<CategoryDelegate> delegate;
+@property(weak,nonatomic) id<NSCategoryDelegate> delegate;
 
 
 /*!

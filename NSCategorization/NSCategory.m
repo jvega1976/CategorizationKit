@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 Alexey Chechetkin. All rights reserved.
 //
 
-#import "Category.h"
+#import "NSCategory.h"
 
 
 
-@implementation Category
+@implementation NSCategory
 
 
-+(Category*)categoryWithTitle:(NSString *)title predicate:(NSPredicate *)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)visible
++(NSCategory*)categoryWithTitle:(NSString *)title predicate:(NSPredicate *)predicate andSortIndex:(NSInteger)sortIndex isAlwaysVisible:(BOOL)visible
 {
-    return [[Category alloc] initWithTitle:title predicate:predicate andSortIndex:sortIndex isAlwaysVisible:visible];
+    return [[NSCategory alloc] initWithTitle:title predicate:predicate andSortIndex:sortIndex isAlwaysVisible:visible];
 }
 
 

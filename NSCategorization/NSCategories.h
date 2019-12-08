@@ -5,20 +5,20 @@
 //  Holds the list of Group Labels to cateogorize array items.
 
 #import <Foundation/Foundation.h>
-#import "Category.h"
+#import "NSCategory.h"
 
 
 
 /*!
  @class Categories. Holds the list of Categories.
  */
-@interface Categories : NSObject
+@interface NSCategories : NSObject
 
 /*!
  Convenience init method.
  @param categories  An array of Category objects.
  */
-+ (Categories*)categoriesWithCategoryArray:(NSArray<Category*>*)categories;
++ (NSCategories*)categoriesWithCategoryArray:(NSArray<NSCategory*>*)categories;
 
 
 /*!
@@ -26,13 +26,13 @@
  @param categories  Array of Category obkects
  @return A new Categories object containing a list of categories.
  */
-- (instancetype)initWithCategories:(NSArray<Category*>*)categories;
+- (instancetype)initWithCategories:(NSArray<NSCategory*>*)categories;
 
 
 /*!
  @property categoryList. Number of actual visible Categories
  */
-@property(strong,nonatomic) NSArray<Category*>* categoryList;
+@property(strong,nonatomic) NSArray<NSCategory*>* categoryList;
 
 
 /*!
@@ -40,7 +40,7 @@
  @param index Index of the Label to return
  @return The Category correponding to index, nil if there is not label.
  */
-- (Category*)categoryAtIndex:(int)index;
+- (NSCategory*)categoryAtIndex:(int)index;
 
 
 /*!
@@ -48,7 +48,7 @@
  @param title title of the Label to return
  @return The Category with the correponding title, nil if there is none.
  */
--(Category*)categoryWithTitle:(NSString*)title;
+-(NSCategory*)categoryWithTitle:(NSString*)title;
 
 
 /*!

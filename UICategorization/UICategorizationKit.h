@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for UICategorization.
-FOUNDATION_EXPORT double UICategorizationVersionNumber;
+FOUNDATION_EXPORT double UICategorizationKitVersionNumber;
 
 //! Project version string for UICategorization.
-FOUNDATION_EXPORT const unsigned char UICategorizationVersionString[];
+FOUNDATION_EXPORT const unsigned char UICategorizationKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UICategorization/PublicHeader.h>
-#import <UICategorization/Category.h>
-#import <UICategorization/Categories.h>
-#import <UICategorization/Categorization.h>
+#import <UICategorizationKit/NSCategory.h>
+#import <UICategorizationKit/NSCategories.h>
+#import <UICategorizationKit/NSCategorization.h>
 
 

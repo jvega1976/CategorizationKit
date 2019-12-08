@@ -9,37 +9,37 @@
 /* Begin PBXBuildFile section */
 		B85A6F0522583F4A0017C009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A6F0422583F4A0017C009 /* Foundation.framework */; };
 		B8691B662266B1D9005B24A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8691B652266B1D9005B24A7 /* Foundation.framework */; };
-		B89AD0EB2254740E00AE0DFD /* NSCategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0DD2254740E00AE0DFD /* NSCategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD0FD225474C900AE0DFD /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* Categories.m */; };
-		B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
-		B89AD0FF225474C900AE0DFD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Category.m */; };
-		B89AD100225474C900AE0DFD /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD101225474C900AE0DFD /* Categorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* Categorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD102225474C900AE0DFD /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD557225487EB00AE0DFD /* UICategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD555225487EB00AE0DFD /* UICategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD55B225487FC00AE0DFD /* Categorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* Categorization.m */; };
-		B89AD55C225487FC00AE0DFD /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* Categories.m */; };
-		B89AD55D225487FC00AE0DFD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* Category.m */; };
-		B89AD55E2254883300AE0DFD /* Categorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* Categorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD55F2254883300AE0DFD /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B89AD5602254883300AE0DFD /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD0EB2254740E00AE0DFD /* CategorizationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0DD2254740E00AE0DFD /* CategorizationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD0FD225474C900AE0DFD /* NSCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* NSCategories.m */; };
+		B89AD0FE225474C900AE0DFD /* NSCategorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* NSCategorization.m */; };
+		B89AD0FF225474C900AE0DFD /* NSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* NSCategory.m */; };
+		B89AD100225474C900AE0DFD /* NSCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* NSCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD101225474C900AE0DFD /* NSCategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* NSCategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD102225474C900AE0DFD /* NSCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* NSCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD557225487EB00AE0DFD /* UICategorizationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD555225487EB00AE0DFD /* UICategorizationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD55B225487FC00AE0DFD /* NSCategorization.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F8225474C900AE0DFD /* NSCategorization.m */; };
+		B89AD55C225487FC00AE0DFD /* NSCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F7225474C900AE0DFD /* NSCategories.m */; };
+		B89AD55D225487FC00AE0DFD /* NSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B89AD0F9225474C900AE0DFD /* NSCategory.m */; };
+		B89AD55E2254883300AE0DFD /* NSCategorization.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FB225474C900AE0DFD /* NSCategorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD55F2254883300AE0DFD /* NSCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FA225474C900AE0DFD /* NSCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89AD5602254883300AE0DFD /* NSCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AD0FC225474C900AE0DFD /* NSCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B85A6F0422583F4A0017C009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8691B652266B1D9005B24A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B89AD0DA2254740E00AE0DFD /* NSCategorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSCategorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89AD0DD2254740E00AE0DFD /* NSCategorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCategorization.h; sourceTree = "<group>"; };
+		B89AD0DA2254740E00AE0DFD /* CategorizationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CategorizationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89AD0DD2254740E00AE0DFD /* CategorizationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategorizationKit.h; sourceTree = "<group>"; };
 		B89AD0DE2254740E00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89AD0F52254747700AE0DFD /* TransmissionRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransmissionRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89AD0F7225474C900AE0DFD /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
-		B89AD0F8225474C900AE0DFD /* Categorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categorization.m; sourceTree = "<group>"; };
-		B89AD0F9225474C900AE0DFD /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
-		B89AD0FA225474C900AE0DFD /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
-		B89AD0FB225474C900AE0DFD /* Categorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categorization.h; sourceTree = "<group>"; };
-		B89AD0FC225474C900AE0DFD /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
-		B89AD553225487EB00AE0DFD /* UICategorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICategorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89AD555225487EB00AE0DFD /* UICategorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICategorization.h; sourceTree = "<group>"; };
+		B89AD0F7225474C900AE0DFD /* NSCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCategories.m; sourceTree = "<group>"; };
+		B89AD0F8225474C900AE0DFD /* NSCategorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCategorization.m; sourceTree = "<group>"; };
+		B89AD0F9225474C900AE0DFD /* NSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCategory.m; sourceTree = "<group>"; };
+		B89AD0FA225474C900AE0DFD /* NSCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCategories.h; sourceTree = "<group>"; };
+		B89AD0FB225474C900AE0DFD /* NSCategorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCategorization.h; sourceTree = "<group>"; };
+		B89AD0FC225474C900AE0DFD /* NSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCategory.h; sourceTree = "<group>"; };
+		B89AD553225487EB00AE0DFD /* UICategorizationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICategorizationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89AD555225487EB00AE0DFD /* UICategorizationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICategorizationKit.h; sourceTree = "<group>"; };
 		B89AD556225487EB00AE0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,8 +76,8 @@
 		B89AD0DB2254740E00AE0DFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B89AD0DA2254740E00AE0DFD /* NSCategorization.framework */,
-				B89AD553225487EB00AE0DFD /* UICategorization.framework */,
+				B89AD0DA2254740E00AE0DFD /* CategorizationKit.framework */,
+				B89AD553225487EB00AE0DFD /* UICategorizationKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,13 +85,13 @@
 		B89AD0DC2254740E00AE0DFD /* NSCategorization */ = {
 			isa = PBXGroup;
 			children = (
-				B89AD0FB225474C900AE0DFD /* Categorization.h */,
-				B89AD0F8225474C900AE0DFD /* Categorization.m */,
-				B89AD0FA225474C900AE0DFD /* Categories.h */,
-				B89AD0F7225474C900AE0DFD /* Categories.m */,
-				B89AD0FC225474C900AE0DFD /* Category.h */,
-				B89AD0F9225474C900AE0DFD /* Category.m */,
-				B89AD0DD2254740E00AE0DFD /* NSCategorization.h */,
+				B89AD0FB225474C900AE0DFD /* NSCategorization.h */,
+				B89AD0F8225474C900AE0DFD /* NSCategorization.m */,
+				B89AD0FA225474C900AE0DFD /* NSCategories.h */,
+				B89AD0F7225474C900AE0DFD /* NSCategories.m */,
+				B89AD0FC225474C900AE0DFD /* NSCategory.h */,
+				B89AD0F9225474C900AE0DFD /* NSCategory.m */,
+				B89AD0DD2254740E00AE0DFD /* CategorizationKit.h */,
 				B89AD0DE2254740E00AE0DFD /* Info.plist */,
 			);
 			path = NSCategorization;
@@ -110,7 +110,7 @@
 		B89AD554225487EB00AE0DFD /* UICategorization */ = {
 			isa = PBXGroup;
 			children = (
-				B89AD555225487EB00AE0DFD /* UICategorization.h */,
+				B89AD555225487EB00AE0DFD /* UICategorizationKit.h */,
 				B89AD556225487EB00AE0DFD /* Info.plist */,
 			);
 			path = UICategorization;
@@ -123,10 +123,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD0EB2254740E00AE0DFD /* NSCategorization.h in Headers */,
-				B89AD102225474C900AE0DFD /* Category.h in Headers */,
-				B89AD101225474C900AE0DFD /* Categorization.h in Headers */,
-				B89AD100225474C900AE0DFD /* Categories.h in Headers */,
+				B89AD0EB2254740E00AE0DFD /* CategorizationKit.h in Headers */,
+				B89AD102225474C900AE0DFD /* NSCategory.h in Headers */,
+				B89AD101225474C900AE0DFD /* NSCategorization.h in Headers */,
+				B89AD100225474C900AE0DFD /* NSCategories.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,19 +134,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD557225487EB00AE0DFD /* UICategorization.h in Headers */,
-				B89AD55E2254883300AE0DFD /* Categorization.h in Headers */,
-				B89AD55F2254883300AE0DFD /* Categories.h in Headers */,
-				B89AD5602254883300AE0DFD /* Category.h in Headers */,
+				B89AD557225487EB00AE0DFD /* UICategorizationKit.h in Headers */,
+				B89AD55E2254883300AE0DFD /* NSCategorization.h in Headers */,
+				B89AD55F2254883300AE0DFD /* NSCategories.h in Headers */,
+				B89AD5602254883300AE0DFD /* NSCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B89AD0D92254740E00AE0DFD /* NSCategorization */ = {
+		B89AD0D92254740E00AE0DFD /* CategorizationKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B89AD0EE2254740E00AE0DFD /* Build configuration list for PBXNativeTarget "NSCategorization" */;
+			buildConfigurationList = B89AD0EE2254740E00AE0DFD /* Build configuration list for PBXNativeTarget "CategorizationKit" */;
 			buildPhases = (
 				B89AD0D52254740E00AE0DFD /* Headers */,
 				B89AD0D62254740E00AE0DFD /* Sources */,
@@ -157,14 +157,14 @@
 			);
 			dependencies = (
 			);
-			name = NSCategorization;
+			name = CategorizationKit;
 			productName = CategorizationKit;
-			productReference = B89AD0DA2254740E00AE0DFD /* NSCategorization.framework */;
+			productReference = B89AD0DA2254740E00AE0DFD /* CategorizationKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B89AD552225487EB00AE0DFD /* UICategorization */ = {
+		B89AD552225487EB00AE0DFD /* UICategorizationKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B89AD558225487EB00AE0DFD /* Build configuration list for PBXNativeTarget "UICategorization" */;
+			buildConfigurationList = B89AD558225487EB00AE0DFD /* Build configuration list for PBXNativeTarget "UICategorizationKit" */;
 			buildPhases = (
 				B89AD54E225487EB00AE0DFD /* Headers */,
 				B89AD54F225487EB00AE0DFD /* Sources */,
@@ -175,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = UICategorization;
+			name = UICategorizationKit;
 			productName = CategorizationUI;
-			productReference = B89AD553225487EB00AE0DFD /* UICategorization.framework */;
+			productReference = B89AD553225487EB00AE0DFD /* UICategorizationKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -209,8 +209,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B89AD0D92254740E00AE0DFD /* NSCategorization */,
-				B89AD552225487EB00AE0DFD /* UICategorization */,
+				B89AD0D92254740E00AE0DFD /* CategorizationKit */,
+				B89AD552225487EB00AE0DFD /* UICategorizationKit */,
 			);
 		};
 /* End PBXProject section */
@@ -237,9 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD0FF225474C900AE0DFD /* Category.m in Sources */,
-				B89AD0FE225474C900AE0DFD /* Categorization.m in Sources */,
-				B89AD0FD225474C900AE0DFD /* Categories.m in Sources */,
+				B89AD0FF225474C900AE0DFD /* NSCategory.m in Sources */,
+				B89AD0FE225474C900AE0DFD /* NSCategorization.m in Sources */,
+				B89AD0FD225474C900AE0DFD /* NSCategories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89AD55D225487FC00AE0DFD /* Category.m in Sources */,
-				B89AD55C225487FC00AE0DFD /* Categories.m in Sources */,
-				B89AD55B225487FC00AE0DFD /* Categorization.m in Sources */,
+				B89AD55D225487FC00AE0DFD /* NSCategory.m in Sources */,
+				B89AD55C225487FC00AE0DFD /* NSCategories.m in Sources */,
+				B89AD55B225487FC00AE0DFD /* NSCategorization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B89AD0EE2254740E00AE0DFD /* Build configuration list for PBXNativeTarget "NSCategorization" */ = {
+		B89AD0EE2254740E00AE0DFD /* Build configuration list for PBXNativeTarget "CategorizationKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B89AD0EF2254740E00AE0DFD /* Debug */,
@@ -511,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B89AD558225487EB00AE0DFD /* Build configuration list for PBXNativeTarget "UICategorization" */ = {
+		B89AD558225487EB00AE0DFD /* Build configuration list for PBXNativeTarget "UICategorizationKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B89AD559225487EB00AE0DFD /* Debug */,

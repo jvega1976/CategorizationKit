@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Alexey Chechetkin. All rights reserved.
 //
 
-#import "Categories.h"
+#import "NSCategories.h"
 
-@implementation Categories
+@implementation NSCategories
 
 -(instancetype)init {
     self = [super init];
@@ -19,27 +19,27 @@
     return nil;
 }
 
-+(Categories*)categoriesWithCategoryArray:(NSArray<Category *> *)categories {
-    return [[Categories alloc] initWithCategories:categories];
++(NSCategories*)categoriesWithCategoryArray:(NSArray<NSCategory *> *)categories {
+    return [[NSCategories alloc] initWithCategories:categories];
     
 }
 
 
-- (instancetype)initWithCategories:(NSArray<Category *> *)categories {
+- (instancetype)initWithCategories:(NSArray<NSCategory *> *)categories {
     self = [super init];
     self.categoryList = categories;
     return self;
 }
 
 
-- (Category *)categoryAtIndex:(int)index
+- (NSCategory *)categoryAtIndex:(int)index
 {
     return [_categoryList objectAtIndex:index];
 }
 
 
-- (Category*)categoryWithTitle:(NSString *)title {
-    for(Category *category in _categoryList) {
+- (NSCategory*)categoryWithTitle:(NSString *)title {
+    for(NSCategory *category in _categoryList) {
         if([category.title isEqualToString:title])
             return category;
     }
@@ -47,7 +47,7 @@
 }
 
 - (NSInteger)sortIndexForCategoryWithTitle:(NSString *)title {
-    for(Category *category in _categoryList) {
+    for(NSCategory *category in _categoryList) {
         if([category.title isEqualToString:title])
             return category.sortIndex;
     }
@@ -56,7 +56,7 @@
 
 
 -(NSPredicate*)predicateForCategoryWithTitle:(NSString *)title{
-    for(Category *category in _categoryList) {
+    for(NSCategory *category in _categoryList) {
         if([category.title isEqualToString:title])
             return category.predicate;
     }
@@ -64,7 +64,7 @@
 }
 
 -(BOOL)isVisibleCategoryWithTitle:(NSString *)title {
-    for(Category *category in _categoryList) {
+    for(NSCategory *category in _categoryList) {
         if([category.title isEqualToString:title])
             return category.isVisible;
     }
@@ -73,14 +73,14 @@
 
 
 -(void)setCountForLCategoriesUsingItems:(NSArray *)items {
-    for(Category *category in _categoryList) {
+    for(NSCategory *category in _categoryList) {
         [category setItemsCount:[[items filteredArrayUsingPredicate:category.predicate] count]];
     }
 }
 
 
 -(NSInteger)countForCategoryWithTitle:(NSString *)title {
-    for(Category *category in _categoryList) {
+    for(NSCategory *category in _categoryList) {
         if([category.title isEqualToString:title])
             return category.itemsCount;
     }
