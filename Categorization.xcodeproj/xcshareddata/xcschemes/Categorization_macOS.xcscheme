@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1110"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B89AD0D92254740E00AE0DFD"
-               BuildableName = "CategorizationKit.framework"
-               BlueprintName = "CategorizationKit"
-               ReferencedContainer = "container:CategorizationKit.xcodeproj">
+               BlueprintIdentifier = "B8DA672022E2986400521F45"
+               BuildableName = "Categorization_macOS.framework"
+               BlueprintName = "Categorization_macOS"
+               ReferencedContainer = "container:Categorization.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B89AD0D92254740E00AE0DFD"
-            BuildableName = "CategorizationKit.framework"
-            BlueprintName = "CategorizationKit"
-            ReferencedContainer = "container:CategorizationKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B89AD0D92254740E00AE0DFD"
-            BuildableName = "CategorizationKit.framework"
-            BlueprintName = "CategorizationKit"
-            ReferencedContainer = "container:CategorizationKit.xcodeproj">
+            BlueprintIdentifier = "B8DA672022E2986400521F45"
+            BuildableName = "Categorization_macOS.framework"
+            BlueprintName = "Categorization_macOS"
+            ReferencedContainer = "container:Categorization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
